@@ -20,7 +20,7 @@
   <header>
     <p class="eyebrow">CDXML Reader · Android</p>
     <h1>隐私政策 <span lang="en">Privacy Policy</span></h1>
-    <p class="meta">更新及生效日期：2026 年 11 月 6 日<br><span lang="en">Updated and effective: November 6, 2026</span></p>
+    <p class="meta">更新及生效日期：2026 年 11 月 7 日<br><span lang="en">Updated and effective: November 7, 2026</span></p>
     <p class="intro">本政策说明您使用 CDXML Reader、访问本网站或主动联系开发者时，信息如何处理。文档在设备本机阅读与导出；Google Play、文件提供方、网页托管及您主动使用的其他服务，分别按其政策处理相关信息。</p>
   </header>
   <nav class="policy-toc" aria-label="中文政策目录">
@@ -40,6 +40,8 @@
         <tbody>
           <tr><td>您导入的文件内容和文件名</td><td>解析、绘制、离线重开及分享原附件</td><td>应用私有存储中的本地副本；不自动上传给开发者</td></tr>
           <tr><td>文件大小、内容校验值（哈希）和最近打开时间</td><td>校验副本完整性、识别已有副本及排列最近列表</td><td>本机保存；哈希不发送给开发者</td></tr>
+          <tr><td>主动导入或下载的字体文件、名称、字重和替代设置</td><td>在本应用内绘制原稿和导出 PDF</td><td>应用私有存储；导入的字体及替代设置不会上传</td></tr>
+          <tr><td>点击下载推荐字体时的网络请求</td><td>从固定开源项目取得选定字体</td><td>GitHub 及其分发服务会接收所选字体资源路径、IP 地址和通常的请求信息；不附带文档名称、内容、哈希或导入字体</td></tr>
           <tr><td>阅读次数、阅读及评价邀请时间；从本机读取的安装时间</td><td>判断自愿评价邀请时机并减少重复提醒</td><td>本机处理，不向开发者报告阅读行为</td></tr>
           <tr><td>临时导入文件、生成的 PDF 和分享附件</td><td>完成导入、导出和您选择的分享</td><td>可能暂存在应用缓存；主动分享后由接收方另行处理</td></tr>
           <tr><td>您主动提供的支持邮件、测试登记邮箱及附件</td><td>回复问题、排查错误、管理测试资格及处理隐私请求</td><td>由开发者及您选择的邮件、私信或测试平台处理，不限于本机</td></tr>
@@ -50,11 +52,12 @@
 
     <h2 id="zh-permissions">3. 文件选择与系统授权</h2>
     <p>应用使用 Android 系统文件选择器，以及其他应用主动分享给本应用的文件。它仅为处理您选定或发来的文件读取相应内容，不主动遍历整台设备。文件提供方可能是本地存储、外部存储或云盘。</p>
-    <p>本应用发布版不申请 INTERNET、通讯录、定位、相机、麦克风、广告标识或管理全部文件的权限，也不接入应用内购买。系统文件提供方、Google Play、浏览器、邮件等独立应用仍可使用自身权限联网；本应用没有互联网权限，不代表这些服务也不联网。取消文件选择不会将文件发送给开发者。</p>
+    <p>含字体管理功能的版本申请 INTERNET 权限，仅在您点击下载推荐字体时由本应用取得字体资源。此前不含该功能的版本不申请互联网权限。应用不申请通讯录、定位、相机、麦克风、广告标识或管理全部文件的权限，也不接入应用内购买。系统文件提供方、Google Play、浏览器、邮件等独立应用仍可使用自身权限联网。取消文件选择不会将文件发送给开发者。</p>
 
     <h2 id="zh-local">4. 本地解析与云盘快照</h2>
     <p>文档解析、显示和 PDF 生成在设备上完成。导入时保留来源文件原始字节的本地副本，用于再次打开和分享。只读阅读及 PDF 导出不改写来源原稿；应用不将文档、文档内容或哈希传给 Google SDK 或开发者服务器。</p>
     <p>选择尚未下载的云盘文件时，需要文件提供方先下载，其账号、网络和隐私政策适用。导入结果是当时的快照，云端后续修改不会自动同步到本地副本；最近文件列表不经开发者服务器跨设备同步。本应用不提供远程转换、云端解析或云端文档备份。</p>
+    <p>字体管理是可选功能：您可以使用系统字体、选择本机 TTF/OTF 字体，或点击下载推荐的开源字体。推荐字体从固定版本的 GitHub 原始资源地址通过 HTTPS 获取，并在启用前检查大小和校验值；读取文档、导入字体及打开字体管理页本身不会触发字体下载。成功安装的字体和替代设置保存在本机，可在离线时继续使用，且只影响本应用内的显示和 PDF，不修改系统字体或原始 CDXML 字体名称。</p>
 
     <h2 id="zh-sharing">5. PDF 导出、分享与接收方副本</h2>
     <p>您主动执行保存或分享时，生成的 PDF 或原始附件才会交给您选择的位置、应用或服务。文件可能包含原稿中的文字、图片、结构、文件名称及相关信息；应用不会替您识别或移除全部敏感内容。请在操作前检查内容、接收对象和保密要求。</p>
@@ -73,13 +76,14 @@
 
     <h2 id="zh-website">8. 网站、Cookie 与 GitHub Pages</h2>
     <p>本隐私政策和支持页是静态网页，无我们添加的广告、访问分析脚本或追踪 Cookie，不要求登录。网页由 GitHub Pages 托管；您访问时浏览器需要与 GitHub 建立连接。GitHub 会为安全目的记录和保存访问者的 IP 地址，无论您是否登录 GitHub，详见 <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages 数据收集说明</a>及 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。</p>
-    <p>网站访问记录与本机文档副本是不同的信息处理。仅访问本网页不会将您阅读的文档、文档内容或哈希附带发送到 GitHub。以后更换托管服务或增加分析工具时，会相应更新本政策。</p>
+    <p>网站访问和可选字体下载均可能向 GitHub 或其分发服务提供普通网络请求信息，包括 IP 地址、请求时间、资源路径和请求头，适用 GitHub 自身的隐私政策。字体下载只请求固定的字体资源，不发送文档名称、内容、哈希或自行导入的字体。以后更换托管或下载服务、增加分析工具时，会相应更新本政策。</p>
 
     <h2 id="zh-retention">9. 保留期限、缓存与删除</h2>
     <ul>
       <li><strong>文档、文件信息及最近列表：</strong>保留至您在应用内移除相应副本、清除应用数据或卸载，没有按固定天数自动淘汰文档的机制。删除本机副本不删除来源原稿或另行导入、保存、分享的副本。</li>
       <li><strong>临时导入、PDF 与分享缓存：</strong>按应用流程清理，异常中断时可能暂留；系统也可能清理缓存。分享附件可能保留到后续分享或缓存清理。Android 设置可清除缓存；清除应用数据还会移除文档库和本机设置。</li>
       <li><strong>评价邀请记录：</strong>本机保留用于减少重复提醒，清除应用数据或卸载可移除这些应用记录。</li>
+      <li><strong>字体与替代设置：</strong>在字体管理页移除对应字体可删除其本地文件及设置；清除应用数据或卸载也会移除。下载失败或取消的临时文件会清理，异常中断后在下次初始化清理。移除本地文件不会删除下载服务独立保留的请求日志。</li>
       <li><strong>支持及测试联系信息：</strong>按第 7 节所述必要期间保留；法律确有要求或请求尚未处理完成时，可能有限保留相应记录。</li>
       <li><strong>第三方记录：</strong>卸载应用不能删除 Google Play 订单、兑换及评价记录、云盘原稿、邮件或私信记录、GitHub 日志及接收方副本；请使用对应平台的设置或请求渠道。</li>
     </ul>
@@ -112,7 +116,7 @@
     <header>
       <p class="eyebrow">CDXML Reader · Android</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Updated and effective: November 6, 2026</p>
+      <p class="meta">Updated and effective: November 7, 2026</p>
       <p class="intro">This policy explains information processing when you use CDXML Reader, visit this website or contact the developer. Documents are read and exported on your device. Google Play, file providers, hosting and other services you choose handle their own information under their policies.</p>
     </header>
     <nav class="policy-toc" aria-label="English policy contents">
@@ -131,6 +135,8 @@
         <tbody>
           <tr><td>Imported file content and names</td><td>Parsing, display, offline reopening and original attachments</td><td>Local copies in app-private storage; not automatically uploaded to the developer</td></tr>
           <tr><td>File size, integrity hashes and last-opened time</td><td>Checking copies, identifying existing files and ordering recents</td><td>Kept on-device; hashes are not sent to the developer</td></tr>
+          <tr><td>Fonts you import or download, their names, weights and substitution settings</td><td>Drawing documents and exporting PDF within this app</td><td>App-private local storage; imported fonts and substitution settings are not uploaded</td></tr>
+          <tr><td>Network requests when you tap to download a recommended font</td><td>Obtaining selected fonts from a fixed open-source project</td><td>GitHub and its distribution services receive the selected font resource path, IP address and ordinary request information; no document names, content, hashes or imported fonts are attached</td></tr>
           <tr><td>Reading counts and times, review-invitation times; installation time read from the device</td><td>Timing optional review invitations and reducing repeat prompts</td><td>Processed locally, not reported as reading analytics to the developer</td></tr>
           <tr><td>Temporary imports, generated PDFs and share attachments</td><td>Import, export and sharing you choose</td><td>May remain in app cache; recipients handle copies after sharing</td></tr>
           <tr><td>Voluntary support emails, test-registration email addresses and attachments</td><td>Replies, troubleshooting, test access and privacy requests</td><td>Handled by the developer and selected email, messaging or testing platforms, beyond the device</td></tr>
@@ -141,11 +147,12 @@
 
     <h2 id="en-permissions">3. File selection and system permissions</h2>
     <p>The app uses Android's document picker and files actively shared to it by other apps. It reads the selected or received file to process it, rather than scanning the whole device. Providers may be local storage, removable storage or cloud services.</p>
-    <p>The release app does not request INTERNET, contacts, location, camera, microphone, advertising-ID or all-files-management permissions, and does not integrate in-app billing. Independent file providers, Google Play, browsers and email apps may still connect using their own permissions. The app's lack of internet permission does not mean those services are offline. Cancelling file selection does not send the file to the developer.</p>
+    <p>Versions with font management request INTERNET so the app can obtain font resources when you tap to download recommended fonts. Earlier versions without that feature do not request internet permission. The app does not request contacts, location, camera, microphone, advertising-ID or all-files-management permissions, and does not integrate in-app billing. Independent file providers, Google Play, browsers and email apps may connect using their own permissions. Cancelling file selection does not send the file to the developer.</p>
 
     <h2 id="en-local">4. Local processing and cloud snapshots</h2>
     <p>Parsing, display and PDF generation occur on-device. Imported original-byte copies support reopening and sharing. Reading and PDF export do not overwrite the source; the app does not pass documents, document content or hashes to Google SDKs or developer servers.</p>
     <p>Cloud providers must first download unavailable cloud files under their own account, network and privacy terms. Imported copies are snapshots, without automatic updates after cloud edits or developer-server synchronization of recents. The app provides no remote conversion, cloud parsing or cloud document backup.</p>
+    <p>Font management is optional: use system fonts, select local TTF/OTF files, or tap to download recommended open-source fonts. Recommended fonts come from pinned GitHub raw-resource URLs over HTTPS, with size and integrity checks before activation. Reading documents, importing fonts or opening font management does not itself trigger font downloads. Installed fonts and substitution settings stay on-device for offline use, affect only in-app drawing and PDF, and do not change system fonts or original CDXML family names.</p>
 
     <h2 id="en-sharing">5. PDF export, sharing and recipients' copies</h2>
     <p>Only your save or share action hands a generated PDF or original attachment to a destination, app or service you choose. Files may contain source text, images, structures, names and related information. The app does not identify or remove all sensitive content for you; check the content, recipient and confidentiality requirements before proceeding.</p>
@@ -164,13 +171,14 @@
 
     <h2 id="en-website">8. Website, cookies and GitHub Pages</h2>
     <p>These privacy and support pages are static, require no login, and contain no advertising, visitor-analytics scripts or tracking cookies added by us. GitHub Pages hosts the site; visiting requires your browser to connect to GitHub. GitHub logs and stores visitors' IP addresses for security whether or not they are signed in. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a> and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
-    <p>Website access records and local app documents are separate processing activities. Merely visiting this page does not attach your documents, document content or hashes to requests to GitHub. Changes to hosting or analytics would require corresponding policy updates.</p>
+    <p>Website visits and optional font downloads may provide ordinary request information, including IP address, request time, resource path and headers, to GitHub or its distribution services under GitHub's privacy policy. Font downloads request fixed font resources and do not send document names, content, hashes or fonts you imported yourself. We will update this policy if hosting or download services change or analytics are added.</p>
 
     <h2 id="en-retention">9. Retention, cache and deletion</h2>
     <ul>
       <li><strong>Documents, file information and recents:</strong> kept until removed in the app, app data is cleared or the app is uninstalled, without fixed-day automatic document eviction. Removing a local copy does not delete the source or separately imported, saved or shared copies.</li>
       <li><strong>Temporary imports, PDFs and share cache:</strong> cleaned through app workflows but may remain after interruption; the system may also clear cache. Shared attachments may remain until a later share or cache cleanup. Android settings can clear cache; clearing app data also removes the library and local settings.</li>
       <li><strong>Review-invitation records:</strong> kept locally to reduce repeat prompts; clearing app data or uninstalling removes these app records.</li>
+      <li><strong>Fonts and substitutions:</strong> Remove a font in font management to delete its local files and settings; clearing app data or uninstalling also removes them. Failed or cancelled download files are cleaned up, with interrupted leftovers removed at the next initialization. Local removal does not erase request logs independently retained by download services.</li>
       <li><strong>Support and testing contacts:</strong> kept for the necessary periods described in section 7. Legal requirements or unresolved requests may require limited retention.</li>
       <li><strong>Third parties:</strong> uninstalling does not delete Play orders, redemptions or reviews, cloud originals, email or messaging records, GitHub logs or recipients' copies. Use the relevant platform's controls or request channels.</li>
     </ul>
